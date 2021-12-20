@@ -1,8 +1,8 @@
 import streamlit as st 
   
 st.title("Basic Calculator")
-a = st.slider("Select the first number :", 0,100)    # User input for first number 
-b = st.slider("Select the second number :", 0 ,100)  # User input for second number 
+a = st.number_input("Select the first number :", 0,100)    # User input for first number 
+b = st.number_input("Select the second number :", 0 ,100)  # User input for second number 
 select = st.selectbox("WHICH OPERATION", ("Addition","Subtraction", "Multiplication","Division"))
 if select == "Addition":
   calc = int(a) + int(b)
